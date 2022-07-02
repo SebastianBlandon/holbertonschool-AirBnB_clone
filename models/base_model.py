@@ -4,6 +4,7 @@
 """
 from uuid import uuid4
 from datetime import datetime
+from models import storage
 dateformat = "%Y-%m-%dT%H:%M:%S.%f"
 
 class BaseModel():
@@ -25,15 +26,20 @@ class BaseModel():
             self.id = str(uuid4())
             self.created_at = datetime.today()
             self.updated_at = datetime.today()
+            storage.new(self)
 
-    def __str__(self):
+    def __str__(self):i
+        """ __str__ Method """
         return "[{}] ({}) {}"\
                 .format(BaseModel.__name__, self.id, self.__dict__)
 
     def save(self):
+        """ save Method """
         self.updated_at = datetime.today()
+        storage.save()
 
     def to_dict(self):
+        """ to_dict Method """
         self.__dict__["__class__"] = self.__class__.__name__
         self.created_at = str(self.created_at.isoformat("T"))
         self.updated_at = str(self.updated_at.isoformat("T"))
