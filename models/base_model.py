@@ -4,15 +4,27 @@
 """
 from uuid import uuid4
 from datetime import datetime
-
+dateformat = "%Y-%m-%dT%H:%M:%S.%f"
 
 class BaseModel():
     """ class BaseModel """
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """ Method __init__ initialize the all attibutes """
-        self.id = str(uuid4())
-        self.created_at = datetime.today()
-        self.updated_at = datetime.today()
+        if kwargs:
+            for key, val in kwargs.items():
+                if key != '__class__':
+                    setattr(self, key, val)
+                if hasattr(self, 'created_at') and type(self.created_at) is str:
+                    self.created_at = datetime.strptime(kwargs["created_at"],\
+                            dateformat)
+                if hasattr(self, 'updated_at') and type(self.updated_at) is str:
+                    self.updated_at = datetime.strptime(kwargs["updated_at"],\
+                            dateformat)
+
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.today()
+            self.updated_at = datetime.today()
 
     def __str__(self):
         return "[{}] ({}) {}"\
