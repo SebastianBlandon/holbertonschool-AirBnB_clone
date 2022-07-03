@@ -7,6 +7,7 @@ from datetime import datetime
 from models import storage
 dateformat = "%Y-%m-%dT%H:%M:%S.%f"
 
+
 class BaseModel():
     """ class BaseModel """
     def __init__(self, *args, **kwargs):
@@ -28,7 +29,7 @@ class BaseModel():
             self.updated_at = datetime.today()
             storage.new(self)
 
-    def __str__(self):i
+    def __str__(self):
         """ __str__ Method """
         return "[{}] ({}) {}"\
                 .format(BaseModel.__name__, self.id, self.__dict__)
@@ -41,7 +42,10 @@ class BaseModel():
     def to_dict(self):
         """ to_dict Method """
         self.__dict__["__class__"] = self.__class__.__name__
-        self.created_at = str(self.created_at.isoformat("T"))
-        self.updated_at = str(self.updated_at.isoformat("T"))
-        return self.__dict__
+        dict_cpy = self.__dict__.copy()
+        if "created_at" in self.__dict__:
+            dict_cpy["created_at"] = self.created_at.strftime(dateformat)
+        if "updated_at" in self.__dict__:
+            dict_cpy["updated_at"] = self.updated_at.strftime(dateformat)
+        return dict_cpy
 
