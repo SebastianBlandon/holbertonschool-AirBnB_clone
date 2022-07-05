@@ -41,11 +41,10 @@ class BaseModel():
 
     def to_dict(self):
         """ to_dict Method """
-        self.__dict__["__class__"] = self.__class__.__name__
-        dict_cpy = self.__dict__.copy()
-        if "created_at" in self.__dict__:
-            dict_cpy["created_at"] = self.created_at.strftime(dateformat)
-        if "updated_at" in self.__dict__:
-            dict_cpy["updated_at"] = self.updated_at.strftime(dateformat)
-        return dict_cpy
-
+        n_dict = self.__dict__.copy()
+        if "created_at" in n_dict:
+            n_dict["created_at"] = n_dict["created_at"].strftime(dtm)
+        if "updated_at" in n_dict:
+            n_dict["updated_at"] = n_dict["updated_at"].strftime(dtm)
+        n_dict["__class__"] = self.__class__.__name__
+        return n_dict
