@@ -3,18 +3,9 @@
     class FileStorage that serializes instances to a JSON file and deserializes
     JSON file to instances
 """
+
+
 import json
-from models.base_model import BaseModel
-from models.user import User
-from models.state import State
-from models.city import City
-from models.amenity import Amenity
-from models.place import Place
-from models.review import Review
-
-
-classes = {"BaseModel": BaseModel, "User": User, "State": State,
-           "Place": Place, "City": City, "Amenity": Amenity, "Review": Review}
 
 
 class FileStorage:
@@ -43,10 +34,15 @@ class FileStorage:
 
     def reload(self):
         """deserializes the JSON file to __objects"""
+        from models.base_model import BaseModel
+
+
+        classes = {"BaseModel": BaseModel}
+
         try:
-            with open(self.__file_path, 'r', encoding='UTF-8') as file:
-                jn = json.load(file)
-            for key in jn:
-                self.__objects[key] = classes[jn[key]["__class__"]](**jn[key])
+             with open(self.__file_path, mode="r", encoding="utf-8") as file:
+                for key, value in json.load(file).items():
+                    self.__objects[key] = classes[value['__class__']](
+                        **value)
         except FileNotFoundError:
             pass

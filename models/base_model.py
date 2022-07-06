@@ -2,9 +2,13 @@
 """
     class BaseModel that defines all common attributes/methods for other classes
 """
+
+
 from uuid import uuid4
 from datetime import datetime
 from models import storage
+
+
 dateformat = "%Y-%m-%dT%H:%M:%S.%f"
 
 
@@ -43,8 +47,10 @@ class BaseModel():
         """ to_dict Method """
         n_dict = self.__dict__.copy()
         if "created_at" in n_dict:
-            n_dict["created_at"] = n_dict["created_at"].strftime(dtm)
+            n_dict["created_at"] = n_dict["created_at"]\
+                    .strftime(dateformat)
         if "updated_at" in n_dict:
-            n_dict["updated_at"] = n_dict["updated_at"].strftime(dtm)
+            n_dict["updated_at"] = n_dict["updated_at"]\
+                    .strftime(dateformat)
         n_dict["__class__"] = self.__class__.__name__
         return n_dict
