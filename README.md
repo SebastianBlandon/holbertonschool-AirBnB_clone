@@ -56,6 +56,6 @@ EOF  help  quit
 $
 </code></pre>
 <p>All tests should also pass in non-interactive mode:&nbsp;<code>$ echo "python3 -m unittest discover tests" | bash</code></p>
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220706%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220706T051044Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c73b5af10026ce8a3af2a47a646835a86a713f15f7698bd6267f8f5d255e1ea3" alt="" /></p>
+<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220706T051044Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c73b5af10026ce8a3af2a47a646835a86a713f15f7698bd6267f8f5d255e1ea3" alt="" /></p>
 <h1 style="color: #5e9ca0;">&nbsp;</h1>
 <p>&nbsp;</p>
