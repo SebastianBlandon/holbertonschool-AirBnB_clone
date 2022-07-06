@@ -57,5 +57,16 @@ $
 </code></pre>
 <p>All tests should also pass in non-interactive mode:&nbsp;<code>$ echo "python3 -m unittest discover tests" | bash</code></p>
 <p><img src="https://bn1305files.storage.live.com/y4mN6nr7GPEaSdKtLb2zk_Rmx3KzgggzaO_o8gCxCxuRbZGZ84zHfdsDM47t9-DiJCNWPc-EZl7NDOpbMKlsNitsthxTvTVoFSmp11upbDDWVLYhhhO7y5a9ruCBZhBGUKLXGHYgzE2d1dmiblA6kVPe_nLjUsPtmeBYSIeu0SrO4lXJKYISozaeTA1nk8FLHQ8IVFau8Ymk1w42wi2MUJEQZYA9Ogdrq53asavvExjkGk?encodeFailures=1&width=1257&height=669" alt="" /></p>
-<h1 style="color: #5e9ca0;">&nbsp;</h1>
+<h2 dir="auto">Examples</h2>
+<p dir="auto">To run <br /><br /></p>
+<h2 dir="auto"><a id="user-content-bugs" class="anchor" href="https://github.com/Robert-octavo/monty#bugs" aria-hidden="true"></a>Bugs</h2>
+<p style="color: #5e9ca0;"><span style="color: #000000;">Here is a small list of bugs that were fixed. This program is still under review.</span></p>
+<h2 dir="auto"><a id="user-content-files" class="anchor" href="https://github.com/Robert-octavo/monty#files" aria-hidden="true"></a>Files</h2>
+<p style="color: #5e9ca0;"><span style="color: #000000;">Files include are:</span><br /><span style="color: #000000;">README.md</span><br /><br /></p>
+<h2 dir="auto"><a id="user-content-history" class="anchor" href="https://github.com/Robert-octavo/monty#history" aria-hidden="true"></a>History</h2>
+<p style="color: #5e9ca0;"><span style="color: #000000;">This is the first version</span></p>
+<h2 dir="auto"><a id="user-content-authors" class="anchor" href="https://github.com/Robert-octavo/monty#authors" aria-hidden="true"></a>Authors</h2>
+<p style="color: #5e9ca0;"><span style="color: #000000;">Written by Johan Sebasti&aacute;n Bland&oacute;n &amp; Ricardo Monta&ntilde;a.</span><br /><span style="color: #000000;">July 6th, 2022</span></p>
+<h2 dir="auto"><a id="user-content-copyright" class="anchor" href="https://github.com/Robert-octavo/monty#copyright" aria-hidden="true"></a>Copyright</h2>
+<p style="color: #5e9ca0;"><span style="color: #000000;">&copy; All rights reserved</span></p>
 <p>&nbsp;</p>
