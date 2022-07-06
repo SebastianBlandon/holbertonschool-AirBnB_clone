@@ -1,5 +1,5 @@
 <h1 class="gap">0x00. AirBnB clone - The console</h1>
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220706T051044Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4ee8af10b50bf7ced4624a79beb01e8fd7811e2b0a7b2ad159d031869f4ff017" width="517" height="218" /></p>
+<p><img src="https://bn1305files.storage.live.com/y4mBZR2qGhr3lq4SPgnxJopyyHtZzlMvrbMZ5dilioNByiUNFB7nnxvWGDBpKTFGexwr5bv-frUJk5BVifP0imGy_YT6h-hiORX5Le75x5-AE5iAO_N558BjQhWICc9RrAuDVFjfR9C8dxTpWjOTkHMSj6ZpRO3kgka67OFsXaYLNkTbuO4jqAA1isrlsJkOuQ4_BGCv10UBCtjyGAgPc85SOOdwP2yUERQ7JE9Ha2IoHc?encodeFailures=1&width=1920&height=810" width="517" height="218" /></p>
 <h4>First step: Write a command interpreter to manage your AirBnB objects.</h4>
 <p>This is the first step towards building your first full web application: the&nbsp;<strong>AirBnB clone</strong>. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration&hellip;</p>
 <p>Each task is linked and will help you to:</p>
