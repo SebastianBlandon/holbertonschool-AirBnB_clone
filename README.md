@@ -62,7 +62,7 @@ $
 <h2 dir="auto"><a id="user-content-bugs" class="anchor" href="https://github.com/Robert-octavo/monty#bugs" aria-hidden="true"></a>Bugs</h2>
 <p style="color: #5e9ca0;"><span style="color: #000000;">Here is a small list of bugs that were fixed. This program is still under review.</span></p>
 <h2 dir="auto"><a id="user-content-files" class="anchor" href="https://github.com/Robert-octavo/monty#files" aria-hidden="true"></a>Files</h2>
-<p style="color: #5e9ca0;"><span style="color: #000000;">Files include are:</span><br /><span style="color: #000000;">README.md</span><br /><br /></p>
+<p style="color: #5e9ca0;"><span style="color: #000000;">Files include are:</span><br /><span style="color: #000000;">README.md<br />AUTHORS<br />console.py<br />tests/<br />models/__init__.py<br />models/base_model.py<br />models/user.py<br />models/state.py<br />models/city.py<br />models/amenity.py<br />models/place.py<br /></span><span style="color: #000000;">models/review.py<br />models/engine/__init__.py<br />models/engine/file_storage.py<br /></span></p>
 <h2 dir="auto"><a id="user-content-history" class="anchor" href="https://github.com/Robert-octavo/monty#history" aria-hidden="true"></a>History</h2>
 <p style="color: #5e9ca0;"><span style="color: #000000;">This is the first version</span></p>
 <h2 dir="auto"><a id="user-content-authors" class="anchor" href="https://github.com/Robert-octavo/monty#authors" aria-hidden="true"></a>Authors</h2>
