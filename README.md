@@ -116,7 +116,7 @@ $
 <p>All tests should also pass in non-interactive mode:&nbsp;<code>$ echo "python3 -m unittest discover tests" | bash</code></p>
 <p><img src="https://bn1305files.storage.live.com/y4mN6nr7GPEaSdKtLb2zk_Rmx3KzgggzaO_o8gCxCxuRbZGZ84zHfdsDM47t9-DiJCNWPc-EZl7NDOpbMKlsNitsthxTvTVoFSmp11upbDDWVLYhhhO7y5a9ruCBZhBGUKLXGHYgzE2d1dmiblA6kVPe_nLjUsPtmeBYSIeu0SrO4lXJKYISozaeTA1nk8FLHQ8IVFau8Ymk1w42wi2MUJEQZYA9Ogdrq53asavvExjkGk?encodeFailures=1&width=1257&height=669" alt="" /></p>
 <h2 dir="auto">Examples</h2>
-<p dir="auto">To run <br /><br /></p>
+<p dir="auto">To run <br /><img src="https://bn1305files.storage.live.com/y4mcfX4YBIBzEUYLzxZeDlsR2Rb5Q6gxPMNRv4sg2FpTHYEmGgljvVn_JQviMjt4nDT3pGAFkPlzH6htS7QqnjZtLVKq3Tu9ZhSGR-sIF4_LgMEiEzlJfcrezbpc6Fxd5I_AaMPrlczGazEk8pUJqzdFd5LmXcRjaBqE5eEfwn0sdIE6XramdgCh8S_ErSHuZWm3mHdcy2g-ncjNMfZoi32Iuf96L7lQNwWSQMK_qMY_gE?encodeFailures=1&amp;width=704&amp;height=552" width="572" height="241" /></p>
 <h2 dir="auto"><a id="user-content-bugs" class="anchor" href="https://github.com/Robert-octavo/monty#bugs" aria-hidden="true"></a>Bugs</h2>
 <p style="color: #5e9ca0;"><span style="color: #000000;">Here is a small list of bugs that were fixed. This program is still under review.</span></p>
 <h2 dir="auto"><a id="user-content-files" class="anchor" href="https://github.com/Robert-octavo/monty#files" aria-hidden="true"></a>Files</h2>
