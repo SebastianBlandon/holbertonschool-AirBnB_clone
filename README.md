@@ -19,6 +19,11 @@
 <li>Update attributes of an object</li>
 <li>Destroy an object</li>
 </ul>
+<h2 dir="auto">Installation</h2>
+<p dir="auto">Clone the repository and run the console.py</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto">
+<pre class="notranslate"><code>$ git clone <a href="https://github.com/SebastianBlandon/holbertonschool-AirBnB_clone.git">https://github.com/elprofe/AirBnB_clone.git</a><br /></code></pre>
+</div>
 <h4 dir="auto">How to Use Command Interpreter</h4>
 <hr />
 <table>
