@@ -38,8 +38,7 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, line):
-        """Creates a new instance of BaseModel, saves it (to the JSON file)
-            and prints the id"""
+        """ Metohd commnad create """
         if len(line) == 0:
             print("** class name missing **")
             return
@@ -52,9 +51,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
     def do_show(self, line):
-        """Prints the string representation of an instance
-            based on the class name and id.
-            Ex: $ show BaseModel 1234-1234-1234."""
+        """ Method commnad show """
         cmd_line = line.split()
         if len(cmd_line) == 0:
             print("** class name missing **")
@@ -71,9 +68,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
     def do_destroy(self, line):
-        """Deletes an instance based on the class name and
-        id (save the change into the JSON file).
-        Ex: $ destroy BaseModel 1234-1234-1234"""
+        """ Metohd commnad destroy """
         cmd_line = line.split()
         if len(cmd_line) == 0:
             print("** class name missing **")
@@ -91,9 +86,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
     def do_all(self, line):
-        """Prints all string representation of all instances
-            based or not on the class name.
-            Ex: $ all BaseModel or $ all."""
+        """ Metohd commnad all """
         cmd_line = line.split()
         if len(cmd_line) == 0 or cmd_line[0] == "BaseModel":
             print('["', end="")
@@ -122,16 +115,9 @@ class HBNBCommand(cmd.Cmd):
             print('"]')
 
     def do_update(self, line):
-        """Updates an instance based on the class name and id
-            by adding or updating attribute
-            (save the change into the JSON file).
-            - Usage:
-            update <class name> <id> <attribute name> "<attribute value>"
-            - Ex:
-            $ update BaseModel 1234-1234-1234 email "aibnb@holbertonschool.com"
-            - Only one attribute can be updated at the time"""
+        """ Method command update """
         cmd_line = line.split()
-        untouchable = ["id", "created_at", "updated_at"]
+        keyss = ["id", "created_at", "updated_at"]
         objets = models.storage.all()
         if not line:
             print("** class name missing **")
@@ -147,7 +133,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** attribute name missing **")
             elif len(cmd_line) < 4:
                 print("** value missing **")
-            elif cmd_line[2] not in untouchable:
+            elif cmd_line[2] not in keyss:
                 obj = objets[instance]
                 obj.__dict__[cmd_line[2]] = cmd_line[3]
                 obj.updated_at = datetime.now()
