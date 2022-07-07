@@ -7,6 +7,7 @@ import os
 import json
 import console
 import tests
+from console import HBNBCommand
 from models.base_model import BaseModel
 
 class TestConsole(unittest.TestCase):
