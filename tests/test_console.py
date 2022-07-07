@@ -17,7 +17,7 @@ class TestConsole(unittest.TestCase):
     def setUpClass(self):
         """Setting of test"""
         self.typing = console.HBNBCommand()
-
+"""
     @classmethod
     def tearDownClass(self):
         """ test test test"""
@@ -25,6 +25,7 @@ class TestConsole(unittest.TestCase):
             os.remove("file.json")
         except:
             pass
+"""
 
 if __name__ == "__main__":
     unittest.main()
