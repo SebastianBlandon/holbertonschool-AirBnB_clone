@@ -37,11 +37,6 @@ class TestConsole(unittest.TestCase):
         self.assertTrue(len(self.__doc__) >= 1)
 
     """Test command interpreter outputs"""
-    def test_emptyline(self):
-        """Test no user input"""
-        with patch('sys.stdout', new=StringIO()) as fake_output:
-            self.typing.onecmd("\n")
-            self.assertEqual(fake_output.getvalue(), '')
 
 if __name__ == "__main__":
     unittest.main()
