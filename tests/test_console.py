@@ -12,6 +12,11 @@ from models.base_model import BaseModel
 
 class TestConsole(unittest.TestCase):
     """ Class designed for test """
-    
+
+    @classmethod
+    def setUpClass(self):
+        """Setting of test"""
+        self.typing = console.HBNBCommand()
+
 if __name__ == "__main__":
     unittest.main()
