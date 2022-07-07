@@ -29,9 +29,9 @@ class TestConsole(unittest.TestCase):
 
    """Check for docstring existance"""
     def test_docstrings_in_console(self):
-        """Test docstrings exist in console.py"""
-        self.assertTrue(len(console.__doc__) >= 1)test_console.py"""
-        self.assertTrue(len(self.__doc__) >= 1)
+                self.assertTrue(len(console.__doc__) >= 1)test_console.py"""
+        self.assertTrue(len(self.__doc__) 
+
 
     """Test command interpreter outputs"""
 
