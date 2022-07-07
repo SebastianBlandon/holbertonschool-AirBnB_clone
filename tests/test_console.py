@@ -27,5 +27,21 @@ class TestConsole(unittest.TestCase):
             pass
 """
 
+   """Check for docstring existance"""
+    def test_docstrings_in_console(self):
+        """Test docstrings exist in console.py"""
+        self.assertTrue(len(console.__doc__) >= 1)
+
+    def test_docstrings_in_test_console(self):
+        """Test docstrings exist in test_console.py"""
+        self.assertTrue(len(self.__doc__) >= 1)
+
+    """Test command interpreter outputs"""
+    def test_emptyline(self):
+        """Test no user input"""
+        with patch('sys.stdout', new=StringIO()) as fake_output:
+            self.typing.onecmd("\n")
+            self.assertEqual(fake_output.getvalue(), '')
+
 if __name__ == "__main__":
     unittest.main()
