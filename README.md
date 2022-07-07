@@ -19,6 +19,59 @@
 <li>Update attributes of an object</li>
 <li>Destroy an object</li>
 </ul>
+<h4 dir="auto">How to Use Command Interpreter</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Commands</th>
+<th>Sample Usage</th>
+<th>Functionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>help</code></td>
+<td><code>help</code></td>
+<td>displays all commands available</td>
+</tr>
+<tr>
+<td><code>create</code></td>
+<td><code>create &lt;class&gt;</code></td>
+<td>creates new object (ex. a new User, Place)</td>
+</tr>
+<tr>
+<td><code>update</code></td>
+<td><code>User.update('123', {'name' : 'Greg_n_Mel'})</code></td>
+<td>updates attribute of an object</td>
+</tr>
+<tr>
+<td><code>destroy</code></td>
+<td><code>User.destroy('123')</code></td>
+<td>destroys specified object</td>
+</tr>
+<tr>
+<td><code>show</code></td>
+<td><code>User.show('123')</code></td>
+<td>retrieve an object from a file, a database</td>
+</tr>
+<tr>
+<td><code>all</code></td>
+<td><code>User.all()</code></td>
+<td>display all objects in class</td>
+</tr>
+<tr>
+<td><code>count</code></td>
+<td><code>User.count()</code></td>
+<td>returns count of objects in specified class</td>
+</tr>
+<tr>
+<td><code>quit</code></td>
+<td><code>quit</code></td>
+<td>exits</td>
+</tr>
+</tbody>
+</table>
 <h2>More Info</h2>
 <h3>Execution</h3>
 <p>Your shell should work like this in interactive mode:</p>
