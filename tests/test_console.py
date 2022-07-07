@@ -20,7 +20,7 @@ class TestConsole(unittest.TestCase):
 """
     @classmethod
     def tearDownClass(self):
-        """ test test test"""
+        """ Remove file.json temp """
         try:
             os.remove("file.json")
         except:
