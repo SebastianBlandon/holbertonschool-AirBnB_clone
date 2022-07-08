@@ -139,5 +139,22 @@ class HBNBCommand(cmd.Cmd):
                 obj.updated_at = datetime.now()
                 obj.save()
 
+
+    def do_all(self, args):
+        """ Method Command all """
+        if args not in HBNBCommand.valid_classes and len(args) != 0:
+            print("** class doesn't exist **")
+            return
+        elif args in HBNBCommand.valid_classes:
+            all_objs = {k: v for (k, v) in storage.all().items()
+                        if isinstance(v, eval(args))}
+        elif len(args) == 0:
+            all_objs = storage.all()
+        else:
+            return
+        for objs_id in all_objs.keys():
+            print(all_objs[objs_id])
+
+
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
