@@ -14,9 +14,9 @@ from models.review import Review
 import models
 
 
-classes = {"BaseModel": BaseModel, "User": User, "Place": Place,\
-        "State": State, "City": City, "Amenity": Amenity,\
-        "Review": Review}
+classes = {"BaseModel": BaseModel, "User": User, "Place": Place}
+cls_up = {"State": State, "City": City, "Amenity": Amenity, "Review": Review}
+classes.update(cls_up)
 
 
 class HBNBCommand(cmd.Cmd):
