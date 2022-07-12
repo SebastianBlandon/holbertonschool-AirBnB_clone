@@ -2,12 +2,7 @@
 """ Tests for User class """
 
 import unittest
-
-import models
-import json
-from models.base_model import BaseModel
 from models.user import User
-from os.path import exists
 
 
 class TestUser(unittest.TestCase):
