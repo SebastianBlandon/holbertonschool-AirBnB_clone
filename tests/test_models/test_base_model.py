@@ -24,14 +24,6 @@ class Test_BaseModel(unittest.TestCase):
         self.assertTrue(hasattr(self.model1, "id"))
         self.assertTrue(hasattr(self.model1, "updated_at"))
 
-    def test_save(self):
-        self.assertTrue(hasattr(self.model1, "updated_at"))
-        self.model1.save()
-        self.assertTrue(hasattr(self.model1, "updated_at"))
-        old_time = self.model2.updated_at
-        self.model2.save()
-        self.assertNotEqual(old_time, self.model2.updated_at)
-
     def test_to_dict(self):
         dicti = self.model2.to_dict()
         self.assertNotEqual(self.model2.__dict__, dicti)
