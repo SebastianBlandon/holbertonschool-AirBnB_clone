@@ -11,10 +11,10 @@ from os.path import exists
 
 
 class TestUser(unittest.TestCase):
-    """Testing our functions of 'User'"""
+    """ Testing Method """
 
     def test_instances_of_User(self):
-        """Testing the 'User' public attributes"""
+        """ Testing instances User """
 
         Model = User()
 
@@ -24,7 +24,7 @@ class TestUser(unittest.TestCase):
         self.assertTrue(hasattr(Model, "last_name"))
 
     def test_type_objects_User(self):
-        """Testing type of 'User' attributes (objects)"""
+        """ Testing type onjects User """
 
         Model = User()
 
