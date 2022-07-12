@@ -2,6 +2,7 @@
 """ Tests for User class """
 
 import unittest
+from models.base_model import BaseModel
 from models.user import User
 
 
