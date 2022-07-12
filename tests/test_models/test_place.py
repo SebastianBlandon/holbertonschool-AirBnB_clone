@@ -9,8 +9,8 @@ from models.place import Place
 class TestPlace(unittest.TestCase):
     """ Testing Method """
 
-    def test_instances_of_User(self):
-        """ Testing instances User """
+    def test_instances_of_Place(self):
+        """ Testing instances Place """
 
         Model = Place()
 
@@ -27,9 +27,11 @@ class TestPlace(unittest.TestCase):
         self.assertTrue(hasattr(Model, "amendity_ids"))
 
     def test_type_objects_User(self):
-        """ Testing type onjects User """
+        """ Testing type onjects Place """
 
-        Model = User()
+        Model = Place()
+
+        self.assertIsInstance(Model, Place)
 
         self.assertIsInstance(Model.city_id, str)
         self.assertIsInstance(Model.user_id, str)
