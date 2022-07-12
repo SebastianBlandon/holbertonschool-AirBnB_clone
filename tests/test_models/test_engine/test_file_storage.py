@@ -36,19 +36,6 @@ class Test_FileStorage(unittest.TestCase):
         self.assertEqual(len(self.storage.all()), self.test_len + 2)
 
     def test_save(self):
-        self.test_len = len(self.storage.all())
-        a = BaseModel()
-        a.save()
-        self.assertEqual(len(self.storage.all()), self.test_len + 1)
-        b = User()
-        self.assertEqual(len(self.storage.all()), self.test_len + 2)
-        b.save()
-        self.assertEqual(len(self.storage.all()), self.test_len + 2)
-
-    def test_reload(self):
-        pass
-
-    def test_save(self):
         """Testing the 'save' method"""
 
         Model = BaseModel()
