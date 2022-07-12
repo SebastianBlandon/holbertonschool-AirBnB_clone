@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-    class BaseModel that defines all common attributes/methods for other classes
+    class BaseModel that defines all common
+    attributes/methods for other classes
 """
 
 
@@ -20,12 +21,14 @@ class BaseModel():
             for key, val in kwargs.items():
                 if key != '__class__':
                     setattr(self, key, val)
-                if hasattr(self, 'created_at') and type(self.created_at) is str:
-                    self.created_at = datetime.strptime(kwargs["created_at"],\
-                            dateformat)
-                if hasattr(self, 'updated_at') and type(self.updated_at) is str:
-                    self.updated_at = datetime.strptime(kwargs["updated_at"],\
-                            dateformat)
+                if hasattr(self, 'created_at')\
+                        and type(self.created_at) is str:
+                    self.created_at = datetime.\
+                            strptime(kwargs["created_at"], dateformat)
+                if hasattr(self, 'updated_at')\
+                        and type(self.updated_at) is str:
+                    self.updated_at = datetime.\
+                            strptime(kwargs["updated_at"], dateformat)
 
         else:
             self.id = str(uuid4())
@@ -35,8 +38,7 @@ class BaseModel():
 
     def __str__(self):
         """ __str__ Method """
-        return "[{}] ({}) {}"\
-                .format(BaseModel.__name__, self.id, self.__dict__)
+        return f"[{BaseModel.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
         """ save Method """
