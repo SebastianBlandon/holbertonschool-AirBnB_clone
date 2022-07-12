@@ -5,6 +5,7 @@
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     position: relative;
+    display: flex;
 }
 
 .filters button {
@@ -59,6 +60,9 @@
     width: 100%;
     top: 100%;
     margin-top: 0;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 div:hover > .popover {

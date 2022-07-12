@@ -24,7 +24,6 @@ class Test_BaseModel(unittest.TestCase):
         self.assertTrue(hasattr(self.model1, "id"))
         self.assertTrue(hasattr(self.model1, "updated_at"))
 
-
     def test_save(self):
         self.assertTrue(hasattr(self.model1, "updated_at"))
         self.model1.save()
@@ -40,6 +39,18 @@ class Test_BaseModel(unittest.TestCase):
         self.assertNotIsInstance(dicti["updated_at"], datetime)
         self.assertTrue(hasattr(dicti, "__class__"))
         self.assertEqual(dicti["__class__"], "BaseModel")
+
+    def test_save(self):
+        """Testing the 'save' method"""
+
+        Model = BaseModel()
+
+        Model.save()
+        self.assertTrue(exists("file.json"))
+        with open("file.json") as file:
+            to_load = json.load(file)
+        self.assertTrue(Model.to_dict() in to_load.values())
+
 
 if __name__ == "__main__":
     unittest.main()

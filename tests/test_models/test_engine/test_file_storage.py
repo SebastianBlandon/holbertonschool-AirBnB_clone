@@ -48,5 +48,29 @@ class Test_FileStorage(unittest.TestCase):
     def test_reload(self):
         pass
 
+    def test_save(self):
+        """Testing the 'save' method"""
+
+        Model = BaseModel()
+
+        Model.save()
+        self.assertTrue(exists("file.json"))
+        with open("file.json") as file:
+            to_load = json.load(file)
+        self.assertTrue(Model.to_dict() in to_load.values())
+
+    def test_reload(self):
+        """Testing the 'reload' method"""
+
+        Model = BaseModel()
+        Model_2 = FileStorage()
+
+        Model_2.save()
+        Model_2.reload()
+        key = f"BaseModel.{Model.id}"
+        dict_all = Model_2.all()
+        self.assertFalse(dict_all[key] is Model)
+
+
 if __name__ == "__main__":
     unittest.main()
