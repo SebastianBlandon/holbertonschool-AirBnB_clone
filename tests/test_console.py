@@ -10,6 +10,7 @@ import tests
 from console import HBNBCommand
 from models.base_model import BaseModel
 
+
 class TestConsole(unittest.TestCase):
     """ Class designed for test """
 
@@ -23,8 +24,9 @@ class TestConsole(unittest.TestCase):
         """ Remove file.json temp """
         try:
             os.remove("file.json")
-        except:
+        except Exception:
             pass
+
 
 if __name__ == "__main__":
     unittest.main()
